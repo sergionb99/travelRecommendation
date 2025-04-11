@@ -1,0 +1,78 @@
+body{
+    width: 100%;
+    
+}
+nav {
+    background-color: black;
+    color: white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagesNav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.searchNav {
+    margin-left: auto;
+    width:20%;
+    margin-right: 20px;
+}
+a {
+    color: white;
+}
+.searchEngine{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    min-width: 200px;
+    padding: 5px;
+    gap:10px;
+}
+.searchEngine input{
+    border: none;
+    width: 50%;
+}
+.searchEngine input:focus{
+    border: none;
+    outline: none;
+
+}
+.searchEngine button{
+    background-color: lightblue;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px;
+}
+.searchEngine button:hover{
+    background-color: #87CEFB;
+    border: 0;
+    border-radius: 20px;
+}
+.content{
+    display:flex;
+    flex-direction: row;
+    background-image: "./newyork.jpg";
+    width: 100%;
+}
+.homeIntroduction{
+    width:30%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.socialmedia{
+    width: 10%;
+    height: 100vh;
+}
