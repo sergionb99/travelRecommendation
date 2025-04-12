@@ -1,15 +1,26 @@
 body{
-    width: 100%;
-    
+    font-family: arial, sans-serif;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 nav {
     background-color: black;
     color: white;
     display:flex;
     justify-content: center;
     align-items: center;
+    padding: 1 0px;
 }
-
+.logo{
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
 .pagesNav{
     display: flex;
     align-items: center;
@@ -22,11 +33,16 @@ nav {
 
 .searchNav {
     margin-left: auto;
-    width:20%;
+    width:25%;
     margin-right: 20px;
 }
 a {
     color: white;
+    text-decoration: none;
+}
+a:hover {
+    color: white;
+    text-decoration: underline;
 }
 .searchEngine{
     background-color: white;
@@ -61,18 +77,58 @@ a {
 .content{
     display:flex;
     flex-direction: row;
-    background-image: "./newyork.jpg";
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./newyork.jpg");
+    background-size: cover;
+    height: 100vh;
+    gap:50px;
+    
 }
 .homeIntroduction{
-    width:30%;
     display: flex;
     align-items: left;
     justify-content: center;
     flex-direction: column;
-    margin-top: 10%;
+    color: white;
+    
 }
 .socialmedia{
     width: 10%;
-    height: 100vh;
+    gap:20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.aboutus{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    gap: 50px;
+}
+.ourteam {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-left: 50px;
+}
+.person {
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.position {
+    background-color: #89CFF0;
+    text-align: center;
+    border-radius: 20px;
+    padding: 5px;
+}
+.person img{
+    width:25px;
+    height:25px;
+    border-radius:20px;
 }
