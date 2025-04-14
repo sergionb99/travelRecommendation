@@ -4,7 +4,7 @@ searchBtn = document.getElementById('searchBtn');
 function searching() {
     /* Get the data in LowerCase */
     const input = document.getElementById('searchDestination').value.toLowerCase();
-    /**/
+    /*Get data from the json*/
     fetch("./travel_recommendation_api.json")
         /* Take the response body as JSON */
         .then(response => response.json())
@@ -14,11 +14,16 @@ function searching() {
             const results = document.getElementById('results');
             /* Delete previous results */
             results.innerHTML = "";
+            /*If data is equal to any country then show it*/
+            const conditioncountry = data.countries.find(item => item.name.toLowerCase() === input);
+            if (conditioncountry){
+                const cities = conditioncountry.cities;
+                showcity(cities);
+            }
             /* If data is equal to beach then show it */
-            if (input === "beach" || input === "beaches") {
+            else if (input === "beach" || input === "beaches") {
                 const beaches = data.beaches;
-                showcity(beaches)
-
+                showcity(beaches);
             }
             /* If data is equal to beach then show it */
             else if (input === "country" || input === "countries") {
