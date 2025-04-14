@@ -34,7 +34,7 @@ function searching() {
                 showcity(temples);
             }
             /* If data is empty show an alert */
-            else if (input==''){
+            else if (input == '') {
                 alert('Please write a keyword');
             }
             /* If it's different show a message that it doesn't match*/
@@ -65,7 +65,7 @@ function clearInput() {
 function showcity(cities) {
     /* Create an array with all the countries and their timezones*/
     const timeZoneCountries = {
-        "Australia": "Australia/Sydney", 
+        "Australia": "Australia/Sydney",
         "Japan": "Asia/Tokyo",
         "Brazil": "America/Sao_Paulo",
         "Cambodia": "Asia/Phnom_Penh",
@@ -95,7 +95,6 @@ function showcity(cities) {
         citytime.textContent = (`Current time in ${country}: ${countrytime}`);
         /* Add button for visit */
         visitbutton.textContent = "Visit";
-
         /* Adding the class result to the div*/
         result.classList.add('result');
         /* Results will be parent of result */
@@ -106,9 +105,6 @@ function showcity(cities) {
         result.appendChild(citydescription);
         result.appendChild(citytime);
         result.appendChild(visitbutton);
-
-        
-        
     }
 }
 /* Create events on click for search and clear buttons */
