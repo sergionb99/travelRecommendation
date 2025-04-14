@@ -1,11 +1,15 @@
+/*Font and background color (when image finish)*/
 body{
     font-family: arial, sans-serif;
+    background-color: #18181a;
 }
+/* Make sure there are not innecessary margins or padding and the box-sizings are right */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
   }
+/*Navegation bar at the top*/
 nav {
     background-color: black;
     color: white;
@@ -14,6 +18,7 @@ nav {
     align-items: center;
     padding: 1 0px;
 }
+/*Div for logo and text, left of the nav*/
 .logo{
     margin-right: auto;
     display: flex;
@@ -21,6 +26,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
+/* Div for home, about us and contact us, centered */
 .pagesNav{
     display: flex;
     align-items: center;
@@ -30,20 +36,23 @@ nav {
     left: 50%;
     transform: translateX(-50%);
 }
-
+/* Div for search tool on the right*/
 .searchNav {
     margin-left: auto;
-    width:25%;
+    width:20%;
     margin-right: 20px;
 }
+/*Links to pages*/
 a {
     color: white;
     text-decoration: none;
 }
+/*Links to pages with the mouse hover*/
 a:hover {
     color: white;
     text-decoration: underline;
 }
+/*Search tool with all elements*/
 .searchEngine{
     background-color: white;
     border-radius: 20px;
@@ -54,26 +63,30 @@ a:hover {
     padding: 5px;
     gap:10px;
 }
+/*Search input*/
 .searchEngine input{
     border: none;
     width: 50%;
 }
+/*Search input when focus*/
 .searchEngine input:focus{
     border: none;
     outline: none;
-
 }
+/*Search buttons clear and search*/
 .searchEngine button{
     background-color: lightblue;
     border: 0;
     border-radius: 20px;
     padding: 10px;
 }
+/*Search buttons when hover*/
 .searchEngine button:hover{
     background-color: #87CEFB;
     border: 0;
     border-radius: 20px;
 }
+/*Div for everything outside the nav*/
 .content{
     display:flex;
     flex-direction: row;
@@ -85,14 +98,17 @@ a:hover {
     gap:50px;
     
 }
+/*Content in home in the center*/
 .homeIntroduction{
     display: flex;
     align-items: left;
     justify-content: center;
     flex-direction: column;
     color: white;
+    width:45%;
     
 }
+/*Social media icons on the left*/
 .socialmedia{
     width: 10%;
     gap:20px;
@@ -100,19 +116,72 @@ a:hover {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 100px,20px;
 }
+/*result for the searches on the left */
+#results{
+    width: 45%;
+    height: 100%;
+    gap:20px;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+/*single city result, white and with the border*/
+.result{
+    width: 50%;
+    background-color: white;
+    border-radius: 20px;
+    min-width: 200px;
+}
+/*Image of the result, with border on the top and all the width*/
+.result img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+/*Margin for the city*/
+.result h3 {
+    margin: 20px;
+}
+/*Margin for the content of the city*/
+.result p {
+    margin: 20px;
+}
+/*Button for results*/
+.result button {
+    background-color: lightblue;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    margin-top: 0px;
+}
+/*Button for results hover*/
+.result button:hover{
+    background-color: #87CEFB;
+    border: 0;
+    border-radius: 10px;
+}
+/*div for the content in about us*/
 .aboutus{
     display: flex;
     flex-direction: column;
     color: white;
     gap: 50px;
 }
+/*div for the team*/
 .ourteam {
     display: flex;
     flex-direction: row;
     gap: 50px;
     margin-left: 50px;
 }
+/*div for every single person of the team*/
 .person {
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -121,17 +190,20 @@ a:hover {
     flex-direction: row;
     gap: 10px;
 }
+/*Position forman (ex. Ceo)*/
 .position {
     background-color: #89CFF0;
     text-align: center;
     border-radius: 20px;
     padding: 5px;
 }
+/*Size of the person image*/
 .person img{
     width:25px;
     height:25px;
     border-radius:20px;
 }
+/*ContactUs page content*/
 .contactus{
     display:flex;
     color:white;
@@ -140,6 +212,7 @@ a:hover {
     justify-content: center;
     align-items: center;
 }
+/*Size and format of the form*/
 .contactusform{
     background-color: rgba(0, 0, 0, 0.2);
     width: 30%;
@@ -149,6 +222,7 @@ a:hover {
     flex-direction: column;
     gap: 10px;
 }
+/*size and colors for input and textarea*/
 .contactusform input, textarea{
     width: 100%;
     border-radius: 5px;
@@ -157,6 +231,7 @@ a:hover {
     font-family: arial, sans-serif;
     border: 1px solid gray;
 }
+/*Format for button in contactus*/
 .contactus button{
     background-color: lightblue;
     border: 0;
@@ -164,6 +239,7 @@ a:hover {
     padding: 10px;
 
 }
+/*Format for button in contactus when hover*/
 .contactus button:hover{
     background-color: #87CEFB;
     border: 0;
